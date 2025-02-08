@@ -1,16 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abbie Smith</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="mediaquieries.css">
 </head>
 
 
 <body>
-    <h1>Hi</h1>
-    <p>I'm Abbie, an aspiring full-stack software engineer</p>
+    <nav id="desktop-nav">
+        <div class="logo">Abbie Smith</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</li>
+                <li><a href="#experience">Experience</li>
+                <li><a href="#projects">Projects</li>
+                <li><a href="#contact">Contact</li>
+            </ul>
+        </div>
+    </nav>
+
+    
+    <nav id="hamburger-nav">
+        <div class="logo">Abbie Smith</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onlclick="togglemenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onlclick="togglemenu()">About</li>
+                    <li><a href="#experience" onlclick="togglemenu()">Experience</li>
+                    <li><a href="#projects" onlclick="togglemenu()">Projects</li>
+                    <li><a href="#contact" onlclick="togglemenu()">Contact</li>
+            </div>
+        </div>
+    </nav>
+
+    
+    <script src="script.js"></script>
 </body>
 
 
