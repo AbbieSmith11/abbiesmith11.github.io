@@ -171,10 +171,10 @@ section {
     display: flex;
     justify-content: center; /* Centers horizontally */
     align-items: center;     /* Centers vertically */
-    width: 30vw;             /* Set the size relative to viewport width (30% of the width) */
-    height: 30vw;            /* Keeps the circle's aspect ratio as 1:1 */
-    max-width: 500px;        /* Max width to avoid it becoming too large */
-    min-width: 200px;        /* Min width to ensure it doesn't shrink too small */
+    width: 20vw;             /* Set the size relative to viewport width (30% of the width) */
+    height: 20vw;            /* Keeps the circle's aspect ratio as 1:1 */
+    max-width: 400px;        /* Max width to avoid it becoming too large */
+    min-width: 150px;        /* Min width to ensure it doesn't shrink too small */
     margin: auto 0;
     overflow: hidden;        /* Ensures anything outside the circle is hidden */
     border-radius: 50%;      /* Makes the container circular */
