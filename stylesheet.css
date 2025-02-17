@@ -8,20 +8,21 @@
 }
 
 body {
-    font-family: "poppins", "sans-serif";
+    font-family: "poppins", sans-serif;
 }
+
 html {
     scroll-behavior: smooth;
 }
 
-p{
+p {
     color:rgb(85,85,85)
 }
 
 /* TRANSITION */
 
-A, .btn {
-    transition: all 300ms ease;
+a, .btn {
+    transition: all 3ms ease;
 }
 
 /* DESCKTOP NAV */
@@ -117,7 +118,7 @@ transition: all 0.3 ease-in-out;
 }
 
 .menu-links.open {
-    max-height: 500px;
+    max-height: 400px;
 }
 
 .hamburger-icon.open span:first-child {
@@ -143,3 +144,112 @@ transition: all 0.3 ease-in-out;
 .hamburger-icon span:first-child {
     transform: none;
 }
+
+/* SECTIONS */
+
+section {
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+.section-container {
+    display: flex;
+}
+
+/* PROFILE SECTION */
+
+#profile {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+}
+
+.section__pic-container {
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+
+.section__text {
+    align-self: center;
+    text-align: center;
+}
+
+.section__text p {
+    font-weight: 600;
+}
+
+.section__text__p1 {
+    text-align: center;
+}
+
+.section__text__p2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+}
+
+#socials-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+/* ICONS */
+
+.icon {
+    cursor: pointer;
+    height: 2rem;
+}
+
+/* BUTTONS */
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+}
+
+.btn-color-1 {
+    border: rgb(53,53,53) 0.1rem solid;
+}
+
+.btn-color-1:hover {
+    cursor: pointer;
+}
+
+.btn-color-1:hover {
+    background: rgb(53,53,53);
+    color: white;
+}
+
+.btn-color-1 {
+    background: none;
+}
+
+.btn-color-1:hover{
+    border: rgb(255,255,255) 0.1rem solid;
+}
+
+.btn-container {
+    gap: 1rem;
+}
+
