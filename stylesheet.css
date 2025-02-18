@@ -205,6 +205,8 @@ section {
     justify-content: center;
     gap: 5rem;
     height: 80vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 }
 
 .section__pic-container {
@@ -288,15 +290,16 @@ section {
     border-radius: 2rem;
     padding: 0.5rem 1rem;
     margin: 0.5rem;
-    border: rgb(53,53,53) 0.1rem solid;
-    background: none;
+    background: rgb(53,53,53);
+    color: white;
+    border: rgb(255,255,255) 0.1rem solid;
 }
 
 .btn-color-1:hover {
     cursor: pointer;
-    background: rgb(53,53,53);
-    color: white;
-    border: rgb(255,255,255) 0.1rem solid;
+    color: rgb(53,53,53);
+    border: rgb(53,53,53) 0.1rem solid;
+    background: none;
 }
 
 .btn-container {
@@ -315,8 +318,32 @@ section {
     width: 100%;
     background-color: rgba(222,222,222,0.5);
     max-height: fit-content;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 }
 
 
 /* MY SKILLS SECTION */
 
+#skills {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.skills-container{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.skills-container img {
+width: 5%;
+height: auto;
+}
+
+/* PROJECTS SECTION */
+
+#projects {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
