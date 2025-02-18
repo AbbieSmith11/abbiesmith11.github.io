@@ -5,6 +5,7 @@
 * {
     margin: 0;
     padding: 0;
+    cursor: default;
 }
 
 body {
@@ -32,10 +33,32 @@ nav, .nav-links {
 }
 
 nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: height 0.3 ease;
     justify-content: space-around;
     align-items: center;
-    height: 17vh;
+    height: 15vh;
+    z-index: 1000;
 }
+
+#desktop-nav.shrink {
+    height: 10vh;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  
+  #desktop-nav .logo {
+    font-size: 1.8em;
+    transition: font-size 0.3s ease;
+  }
+  
+  #desktop-nav.shrink .logo {
+    font-size: 1.4em;
+  }
 
 .nav-links {
     gap: 2rem;
@@ -54,6 +77,7 @@ a {
     text-decoration: underline;
     text-underline-offset: 1rem;
     text-decoration-color: rgb(181,181,181);
+    cursor: pointer;
 }
 
 .logo{
@@ -68,7 +92,16 @@ a {
 
 #hamburger-nav {
     display: none;
+    height: 15vh;
 }
+
+#hamburger-nav.shrink {
+    height: 5vh;
+  }
+
+  #desktop-nav.shrink .logo {
+    font-size: 1.4em;
+  }
 
 .hamburger-menu {
     position: relative;
@@ -112,12 +145,19 @@ transition: all 0.3 ease-in-out;
     transition: all 0.3 ease-in-out;
 }
 
+.menu-links a:hover {
+    cursor: pointer;
+}
+
 .menu-links li {
     list-style: none;
 }
 
 .menu-links.open {
     max-height: 400px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
 }
 
 .hamburger-icon.open span:first-child {
@@ -171,11 +211,11 @@ section {
     display: flex;
     justify-content: center; /* Centers horizontally */
     align-items: center;     /* Centers vertically */
-    width: 20vw;             /* Set the size relative to viewport width (30% of the width) */
-    height: 20vw;            /* Keeps the circle's aspect ratio as 1:1 */
-    max-width: 400px;        /* Max width to avoid it becoming too large */
-    min-width: 150px;        /* Min width to ensure it doesn't shrink too small */
+    width: 400px; 
+    height: 400px;       
     margin: auto 0;
+    min-width: 200px;
+    max-width: 270px;
     overflow: hidden;        /* Ensures anything outside the circle is hidden */
     border-radius: 50%;      /* Makes the container circular */
     position: relative;
@@ -190,13 +230,6 @@ section {
     top: 50%;                /* Centers the image vertically */
     transform: translate(-50%, -50%); /* Keeps the image centered without zooming */
   }
-  
-  
-  
-  
-  
-  
-  
 
 .section__text {
     align-self: center;
@@ -270,3 +303,13 @@ section {
     gap: 1rem;
 }
 
+/* ABOUT ME */
+
+.about-me-p1, .about-me-p2 {
+   display: flex;
+   justify-content: center;
+}
+
+#about {
+    background-color: aquamarine;
+}
