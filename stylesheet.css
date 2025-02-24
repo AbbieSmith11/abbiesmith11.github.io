@@ -146,7 +146,7 @@ transition: all 0.3s ease-in-out;
 }
 
 .menu-links.open {
-    max-height: auto;
+    max-height: 400px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     border-top-left-radius: 20px;
@@ -194,14 +194,15 @@ section {
     height: 80vh;
     margin-top: 5vh;
     margin-bottom: 5vh;
+    padding: 5%;
 }
 
 .section__pic-container {
     display: flex;
     justify-content: center; /* Centers horizontally */
     align-items: center;     /* Centers vertically */
-    width: 400px; 
-    height: 400px;       
+    width: 350px; 
+    height: 350px;       
     min-width: 200px;
     max-width: 270px;
     overflow: hidden;        /* Ensures anything outside the circle is hidden */
@@ -303,6 +304,7 @@ section {
     height: fit-content;
     margin-top: 5vh;
     margin-bottom: 5vh;
+    padding: 5%;
 }
 
 
@@ -311,6 +313,7 @@ section {
 #skills {
     margin-top: 5vh;
     margin-bottom: 5vh;
+    padding: 5%;
 }
 
 .skills-container{
@@ -334,6 +337,7 @@ height: auto;
     grid-template-rows: 500px 100px;
     grid-template-columns: 1fr 30px 30px 30px 30px 30px 1fr;
     align-items: center;
+    padding: 5% 0;
 }
 
 .item img {
@@ -493,10 +497,12 @@ input[type="radio"]:checked {
     height: auto;
 }
 
-.git-link img:hover {
+.git-linkk:hover {
     cursor: pointer;
 }
 
-.git-linkk:hover {
-    cursor: pointer;
+/* FOOTER */
+
+footer p {
+    text-align: center;
 }
