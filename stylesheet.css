@@ -203,8 +203,8 @@ section {
     align-items: center;     /* Centers vertically */
     width: 350px; 
     height: 350px;       
-    min-width: 200px;
-    max-width: 270px;
+    min-width: 170px;
+    max-width: 250px;
     overflow: hidden;        /* Ensures anything outside the circle is hidden */
     border-radius: 50%;      /* Makes the container circular */
     position: relative;
