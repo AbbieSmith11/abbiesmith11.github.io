@@ -199,14 +199,14 @@ section {
 
 .section__pic-container {
     display: flex;
-    justify-content: center; /* Centers horizontally */
-    align-items: center;     /* Centers vertically */
+    justify-content: center; 
+    align-items: center;     
     width: 350px; 
     height: 350px;       
     min-width: 170px;
     max-width: 250px;
-    overflow: hidden;        /* Ensures anything outside the circle is hidden */
-    border-radius: 50%;      /* Makes the container circular */
+    overflow: hidden;       
+    border-radius: 50%;     
     position: relative;
   }
   
