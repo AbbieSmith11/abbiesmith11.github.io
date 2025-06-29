@@ -1,9 +1,6 @@
-# Abbie Smith Portfolio
+# First Portfolio
 
-Welcome to my personal portfolio website, showcasing my skills, projects, and professional journey as a software engineer.
-
-## Website
-Visit the website here: [https://abbiesmith11.github.io/](https://abbiesmith11.github.io/)
+This is my first project, a personal portfolio.
 
 ## Features
 - Overview of skills and experience
@@ -14,8 +11,3 @@ Visit the website here: [https://abbiesmith11.github.io/](https://abbiesmith11.g
 - HTML
 - CSS
 - JavaScript
-
-## Future Plans
-- Add more projects and case studies
-- Enhance the UI/UX design
-- Add blog section
